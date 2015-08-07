@@ -1,0 +1,502 @@
+*{
+	padding:0px;
+	margin: 0px;
+	text-decoration: none; 
+}
+body {
+	background-color: #ECECEC;
+}
+header {
+	background-color: #54aed3;
+	width:100%;
+	height: 130px;
+	box-shadow: 0 0 8px #8E8E8E;
+}
+.ubermich{
+	-webkit-transition: all .5s;
+	position: relative;
+	width: 80px;
+	height: 80px;
+	margin-left: 90%;
+	margin-top: -105px;
+background: url("img/portrait.ubermich.jpg");
+background-size: 80%;
+background-repeat: no-repeat;
+border-radius: 50%;
+border: 1px solid #626262;
+background-color: #fff;
+background-position: center;
+}
+.ubermich:hover{
+	box-shadow: 0 0 10px #8E8E8E;
+	opacity: 0.7;
+
+}
+  .mytext {
+  	transition: all 0.6s; /* TRANSITION BETRIFFT ALLE DRUNTER STEHENDEN ATTRIBUTE */
+  	position: absolute;
+	width: 700px;
+	height: 100px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	top: 65px;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -325px;
+	font-family: 'Poiret One', cursive;
+	line-height: 100px;
+	font-size: 45px;
+	letter-spacing: 5px;
+	color: #fff;
+	background: url("img/ArtOfLaurens1.jpg");
+	background-size: 0.1%;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 1;
+  }
+.myText::before {
+  content: '';
+  position: absolute;
+  height: 95%;
+  width: 100%;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  left: 0;
+  -webkit-transform: translate3d(-101%,0,0);
+  transform: translate3d(-101%,0,0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+.myText:hover {
+	position: absolute;
+	font-size: 0px;
+	letter-spacing: 6.5px;
+	color: #fff;
+	text-decoration: none;
+	box-sizing: border-box;
+	background-size: 80%;
+}
+::-webkit-input-placeholder {
+   color: #fff;
+}
+.such{
+	transition: all 0.5s;
+	width: 500px;
+	height: 130px;
+	margin: 0 auto;
+	background: url("img/ArtOfLaurens1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 1;
+
+}
+.such:hover{
+	background: url("img/ArtOfLaurens1.jpg");
+	background-size: 0.1%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#form{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 12px;
+}
+.filterinput{
+	transition: all 0.5s;
+	height: 100px;
+	width: 100%;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 0px solid white;
+	border-right: 0px solid white;
+	background-color: transparent;
+	color: white;
+	font-size: 50px;
+	opacity: 0;
+	padding-left: 130px;
+	padding-right: 130px;
+	font-family: "Poiret One",cursive;
+}
+.filterinput:hover{
+	height: 105px;
+	width: 100%;
+	background-color: transparent;
+	color: white;
+	font-size: 80px;
+	opacity: 1;
+	padding-left: 90px;
+	padding-right: 80px;
+
+}
+.myText:hover::before {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.pulldown-wrapper {
+	position: relative;
+	float: right;
+	width: 130px;
+	height: 130px;
+}
+
+.pulldown {
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	background: url(img/menu-2.png) center center no-repeat;
+}
+.pulldown-menu {
+	display: none;
+	background-color: #438ba9;
+	transition: all 0.5s;
+}
+
+.pulldown-wrapper:hover .pulldown-menu {
+	display: block;
+	position: absolute;
+	height: 0;
+	right: 0;
+	height: 250px;
+	width: 205px;
+	margin-right: 10px;
+	margin-top: -40px;
+}
+
+.pulldown-menu ul {
+	list-style: none;
+}
+.pulldown-menu li {
+	height: 50px;
+	line-height: 50px;
+	padding-right: 25px;
+	text-align: right;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "Poiret One",cursive;
+}
+.pulldown-menu li:hover {
+	background-color: #fff;
+	cursor: pointer;
+}
+.pulldown-menu li a {
+	color: #fff;
+	text-decoration: none;
+}
+.pulldown-menu li:hover a {
+	color: #438ba9;
+}
+.zuruck{
+-webkit-transition: all .7s;
+background: url("img/zuruck.png");
+position: absolute;
+background-size: 45%;
+background-repeat: no-repeat;
+width: 100px;
+height: 130px;
+
+background-position: center;
+
+padding: auto;
+}
+.zuruck:hover{
+position: absolute;
+background-size: 45%;
+background-repeat: no-repeat;
+width: 100px;
+height: 130px;
+opacity: 0.5;
+background-position: center;
+
+padding: auto;
+}
+
+/* -------------------- */
+/* PRE-LOAD ANIMATION */
+/* -------------------- */
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.menu {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1.4s;
+	-moz-animation-duration:1.4s;
+	animation-duration:1.4s;
+}
+
+.Zeichnungen {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.Webseiten {
+-webkit-animation-delay: 1s;
+-moz-animation-delay:1s;
+animation-delay: 1s;
+}
+
+.Foto {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+.Motion {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.Zeichnungen:hover {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.Webseiten:hover {
+-webkit-animation-delay: 1s;
+-moz-animation-delay:1s;
+animation-delay: 1s;
+}
+
+.Foto:hover {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+.Motion:hover {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+/* -------------------- */
+/* MENU */
+/* -------------------- */
+.menu {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+}
+.eintrag {
+	display: inline-block;
+	width: 360px;
+	height: 360px;
+	margin: 60px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 20px;
+	transition: all 0.4s;
+	background-color: #fff;
+	vertical-align: top;
+	background-size: 100%;
+}
+.menu  a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+	background: #86C0D5;
+	color: #fff;
+	opacity: 0;
+	font-size: 60px;
+	line-height: 360px;
+	border-radius: 20px;
+	font-family: "Poiret One",cursive;
+    -webkit-transition: all .7s; /* Safari */
+    transition: all .7s;
+    box-shadow: 0 0 9px #9C9C9C;
+}
+.eintrag:hover a {
+	opacity: 0.97;
+}
+.Zeichnungen {
+	background-image: url("Zeichnungen/Zeichnungen.jpg");
+	background-size: 65%;
+}
+.Webseiten{
+	background-image: url("Webseiten/Webseiten.jpg");
+	background-size: 75%;
+}
+.Foto{
+	background-image: url("Foto/Foto.jpg");
+	background-size: 75%;
+}
+.Motion {
+	background-image: url("Motion/Motion.jpg");
+	background-size: 60%;
+}
+
+/* -------------------- */
+/* GALLERIE */
+/* -------------------- */
+
+.bilder {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	margin-top: 25px;
+}
+.bilder .eintrag {
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+}
+ a.link{
+	font-size: 34px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+	background: #54aed3;
+	color: #fff;
+	opacity: 0;
+	font-size: 35px;
+	text-align: center;
+	border-radius: 20px;
+	font-family: "Poiret One",cursive;
+    -webkit-transition: all .7s; /* Safari */
+    transition: all .7s;
+    margin: 0 auto;
+    line-height: 300px;
+}
+.Zeichenimg1 {
+	background-image: url("Zeichnungen/1K.jpg");
+}
+.Webseitenimg1 {
+	background-image: url("Zeichnungen/BI1K.jpg");
+}
+.Fotoimg1 {
+	background-image: url("Zeichnungen/BI1K.jpg");
+}
+.Motionimg1 {
+	background-image: url("Zeichnungen/BI1K.jpg");
+}
+.uebermich {
+	width: 80%;
+	background-color: #fff;
+	height: 650px;
+	margin: auto;
+	margin-top: 90px;
+	border-radius: 30px;
+	box-shadow: 0 0 12px #BFBFBF;
+	margin-bottom: 50px;
+}
+h2{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 26pt;
+	color: #222;
+	text-transform: uppercase;
+	font-family: "Poiret One",cursive;
+}
+h3{
+	text-align: center;
+	padding-top: 70px;
+	font-size: 25pt;
+	color: #222;
+	font-family: "Poiret One",cursive;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+h4{
+	text-align: center;s
+	font-size: 15pt;
+	padding-top: 5px;
+	color: #222;
+	line-height: 35px;
+	font-family: "Poiret One",cursive;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+h5{
+	text-align: center;
+	padding-top: 70px;
+	color: #000;
+font-family: "Poiret One",cursive;
+}
+h6{
+	padding-left: 50px;
+	padding-top: 20px;
+	color: #000;
+	font-family: "Poiret One",cursive;
+	font-size: 20pt;
+}
+.faceicon {
+	background-image: url("img/faceicon.png");
+	height:70px;
+	width: 70px;
+	background-size: 100%;
+	display: inline-block;
+	margin-left: 42%;
+	margin-top: 50px;
+	margin-right: 13px;
+		background-repeat: no-repeat;
+}
+.faceicon:hover {
+	opacity: 0.5;
+	height:70px;
+	width: 70px;
+	background-size: 100%;
+	display: inline-block;
+	margin-left: 42%;
+	margin-top: 50px;
+	margin-right: 13px;
+	background-repeat: no-repeat;
+}
+.emailicon {
+	background-image: url("img/emailicon.png");
+	height:70px;
+	width: 70px;
+	background-size: 100%;
+	display: inline-block;
+		background-repeat: no-repeat;
+}
+.instaicon {
+	background-image: url("img/instaicon.png");
+	height:70px;
+	width: 70px;
+	background-size: 100%;
+	display: inline-block;
+	margin-right:13px;
+		background-repeat: no-repeat;
+}
+.instaicon:hover {
+	opacity: 0.5;
+	height:70px;
+	width: 70px;
+	background-size: 100%;
+	display: inline-block;
+	margin-right:13px;
+	background-repeat: no-repeat;
+}
+.emailicon:hover {
+	opacity: 0.5;
+	height:70px;
+	width: 70px;
+	background-size: 100%;
+	display: inline-block;
+		background-repeat: no-repeat;
+}
+.bilder .size{
+	opacity: 0;
+	font-size: 0px;
+}
+.bilder{
+	list-style: none;
+}
+
