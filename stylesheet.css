@@ -103,6 +103,7 @@ background-position: center;
 	height: 100%;
 	margin: 0 auto;
 	padding: 12px;
+  outline: none;
 }
 .filterinput{
 	transition: all 0.5s;
