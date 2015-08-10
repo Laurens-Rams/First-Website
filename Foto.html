@@ -1,8 +1,8 @@
 <html>
 <head>
-  <title>Zeichnungen</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
+	<title>Zeichnungen</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/css">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
        <script src="lightbox/js/jquery-1.11.0.min.js"></script>
        <script src="lightbox/js/lightbox.js"></script>
        <link href="lightbox/css/lightbox.css" rel="stylesheet" />
@@ -12,11 +12,26 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-65596104-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
+<script type="text/javascript" language="JavaScript">
+  
+var Zeichenimg1 = new Array(); 
+ Zeichenimg1[0] = "Fotos/1G.jpg"; 
+ Zeichenimg1[1] = "Fotos/2G.jpg"; 
+ Zeichenimg1[2] = "Fotos/3G.jpg"; 
+ Zeichenimg1[3] = "Fotos/4G.jpg";
+ Zeichenimg1[3] = "Fotos/5G.jpg"; 
+ Zeichenimg1[3] = "Fotos/6G.jpg"; 
+ Zeichenimg1[3] = "Fotos/7G.jpg"; 
+  function Vorladen() { for (i = 0; i < Zeichenimg1.length; i++) {
+   var Bild = new Image(); Bild.src = Zeichenimg1[i]; 
+   }
+ } 
+  Vorladen();
+//--> </script>
 </head>
 <body>
        <header>
@@ -31,13 +46,45 @@
 
        </header>
     
-              <ul id="list">
+               <ul id="list">
                     <li class="bilder">
-                        <a class="size" href="#">walfisch</a>
-                        <a class="size" href="#">fineliner</a>
-                        <div class="eintrag Zeichenimg1"><a class="link" href="Zeichnungen/1G.jpg" data-lightbox="Zeichnungen" data-title="Walfisch">Walfisch</a>
-                    </li>
-                </ul>
+                        <a class="size" href="#">Man</a>
+                        <a class="size" href="#">New York </a>
+                        <a class="size" href="#">Subway </a>
+                        <a class="size" href="#">Menschen</a>
+                        <div class="eintrag Foto1"><a class="link" href="Foto/1G.JPG" data-lightbox="Fotos" data-title="Subway">Subway</a>
+                    <li class="bilder">
+                        <a class="size" href="#">Mann</a>
+                        <a class="size" href="#">New York</a>
+                        <a class="size" href="#">Strasse</a>
+                        <a class="size" href="#">Menschen</a>
+                        <div class="eintrag Foto2"><a class="link" href="Foto/2G.jpg" data-lightbox="Fotos" data-title="Menschen">Menschen</a>
+                    <li class="bilder">
+                        <a class="size" href="#">Strasse</a>
+                        <a class="size" href="#">frau</a>
+                        <a class="size" href="#">New york</a>
+                        <div class="eintrag Foto3"><a class="link" href="Foto/3G.jpg" data-lightbox="Fotos" data-title="Frau">Frau</a>
+                    <li class="bilder">
+                        <a class="size" href="#">Weis</a>
+                        <a class="size" href="#">new york</a>
+                        <a class="size" href="#">mann</a>
+                       <div class="eintrag Foto4"><a class="link" href="Foto/4G.jpg" data-lightbox="Fotos" data-title="Walfisch">Mann</a>
+                    <li class="bilder">
+                        <a class="size" href="#">menschen</a>
+                        <a class="size" href="#">new york</a>
+                        <a class="size" href="#">weis</a>
+                       <div class="eintrag Foto5"><a class="link" href="Foto/5G.jpg" data-lightbox="Fotos" data-title="Walfisch">Menschen</a>
+                    <li class="bilder">
+                        <a class="size" href="#">weis</a>
+                        <a class="size" href="#">new york</a>
+                        <a class="size" href="#">Himmel</a>
+                       <div class="eintrag Foto6"><a class="link" href="Foto/6G.jpg" data-lightbox="Fotos" data-title="Walfisch">Exit</a>
+                    <li class="bilder">
+                        <a class="size" href="#">Strassen</a>
+                        <a class="size" href="#">Mann</a>
+                        <a class="size" href="#">New york</a>
+                       <div class="eintrag Foto7"><a class="link" href="Foto/7G.jpg" data-lightbox="Fotos" data-title="Walfisch">Strassen leben</a>
+               </ul>
 </body>
 
 
@@ -49,7 +96,6 @@
   jQuery.expr[':'].Contains = function(a,i,m){
       return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
   };
-
   function filterList(header, list) {
     var form = $("<form>").attr({"class":"filterform","action":"#"}),
         input = $("<input>").attr("placeholder", "Suchen") .attr({"class":"filterinput","type":"text"});
@@ -58,11 +104,9 @@
       .change( function () {
         var filter = $(this).val();
         if(filter) {
-
           $matches = $(list).find('a:Contains(' + filter + ')').parent();
           $('li', list).not($matches).slideUp();
           $matches.slideDown();
-
         } else {
           $(list).find("li").slideDown();
         }
@@ -72,7 +116,6 @@
         $(this).change();
     });
   }
-
   $(function () {
     filterList($("#form"), $("#list"));
   });
