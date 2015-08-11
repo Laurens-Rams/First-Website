@@ -5,6 +5,7 @@
 }
 body {
 	background-color: #ECECEC;
+  background-size: 100%;
 }
 header {
 	background-color: #54aed3;
@@ -313,7 +314,7 @@ animation-delay: 1s;
 	height: 100%;
 	display: block;
 	text-decoration: none;
-	background: #86C0D5;
+	background: #54aed3;
 	color: #fff;
 	opacity: 0;
 	font-size: 60px;
@@ -323,6 +324,9 @@ animation-delay: 1s;
     -webkit-transition: all .7s; /* Safari */
     transition: all .7s;
     box-shadow: 0 0 9px #9C9C9C;
+}
+.menu .motion a{
+  font-size: 50px;
 }
 .eintrag:hover a {
 	opacity: 0.97;
@@ -385,8 +389,8 @@ animation-delay: 1s;
 .Zeichenimg1 {
 	background-image: url("Zeichnungen/1K.jpg");
 }
-.Webseitenimg1 {
-	background-image: url("Foto/1K.jpg");
+.Webseiten1 {
+	background-image: url("Webseiten/1K.JPG");
 }
 .Foto1 {
 	background-image: url("Foto/1K.jpg");
@@ -526,4 +530,15 @@ h6{
 }
 li.bilder{
   display: inline;
+}
+.format{
+  font-size: 20px;
+  margin-top: -240px;
+  height: 50px;
+}
+.download{
+  font-size: 40px;
+  background-color: transparent;
+  margin-top: -200px;
+  height: 50px;
 }

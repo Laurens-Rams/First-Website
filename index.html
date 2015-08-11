@@ -9,13 +9,11 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-65596104-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </head>
-<body>
+<body background="Zeichnungen/1G.jpg">
        <header>
               <a href="index.html"><div class="zuruck"></div></a>
               <div class="such">
@@ -41,7 +39,6 @@
   jQuery.expr[':'].Contains = function(a,i,m){
       return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
   };
-
   function filterList(header, list) {
     var form = $("<form>").attr({"class":"filterform","action":"#"}),
         input = $("<input>").attr("placeholder", "Suchen") .attr({"class":"filterinput","type":"text"});
@@ -50,11 +47,9 @@
       .change( function () {
         var filter = $(this).val();
         if(filter) {
-
           $matches = $(list).find('a:Contains(' + filter + ')').parent();
           $('li', list).not($matches).slideUp();
           $matches.slideDown();
-
         } else {
           $(list).find("li").slideDown();
         }
@@ -64,11 +59,9 @@
         $(this).change();
     });
   }
-
   $(function () {
     filterList($("#form"), $("#list"));
   });
 }(jQuery));
 </script>
 </html>
-
